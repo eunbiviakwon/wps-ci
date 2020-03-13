@@ -28,6 +28,9 @@ jobs:
       
     - name: Poetry export requirements
       run: ~/.poetry/bin/poetry export -f requirements.txt > requirements.txt
+      
+    - name: Install Python packages
+      run: ~/.poetry/bin/poetry install
 
     # Runs a single command using the runners shell
     - name: Run a one-line script
